@@ -2,6 +2,7 @@
 
 ## 0.11.0
 
+- **Analyse zeigt kleine Beträge Cent-genau** — Ist-Kosten, Baseline-Kosten und Tarifvergleich runden erst ab 100 EUR auf ganze Euro; darunter (Tages-/Wochenkosten) auf Cent. Ein 0,63-EUR-Tag erschien vorher als '1 EUR' und sah nach einer Diskrepanz zum Dashboard aus.
 - **Aufschiebbare Aktionen mit Sofort-Start direkt im „Plan für heute"** — je verschiebbarer Aktion (Waschmaschine, Trockner …) und je anwesendem Fahrzeug eine Karte mit Button: „jetzt starten" bzw. „sofort laden" (und „Auftrag zurücknehmen" / „Laden beenden"), ohne dafür in die Verhalten-Einstellungen wechseln zu müssen. Nutzt dieselben Backends wie die Vorgaben-Karte.
 - **Der Prognose-Check bewertet jetzt auch den WW-Boost** — die Warmwasser-Anhebung (Wärmepumpe läuft früh auf Überschuss, um Wärme zu speichern) zählt als Zeit-Verschiebung von WP-Strom ins PV-Fenster (Preis − Einspeisung), zusätzlich zu den verschobenen Geräten. Alle Plan-Aktionen werden einheitlich als Verschiebung bewertet (der resistive COP-Fall bleibt der reaktiven ELWA-Senke im Ledger vorbehalten).
 - **Prognose-Check: geplant vs. realisiert** — SEA schreibt beim Tagesplan die erwartete Einsparung mit (PV-eingeplante Aufgaben × Rate je Art, mit dem Preis des geplanten Fensters) und stellt sie rückblickend dem tatsächlich Erreichten (Ledger) gegenüber: „prognostiziert X, realisiert Y, Trefferquote Z %". Die Prognose beruhte auf der PV-Vorhersage — so wird ehrlich sichtbar, ob sie eingetreten ist. Buchung einmal je Tag (erste Festlegung zählt).
