@@ -2,6 +2,8 @@
 
 ## 0.11.0
 
+- **Investition: Hinweis, solange die Hochrechnung auf einer Jahreszeit beruht** — die Spalte „hochgerechnet" rechnet Ersparnis durch Tage mal 365; mit erst wenigen Monaten Aufzeichnung ist das eine Jahreszeit und kein Jahr, was mehr PV und einen groesseren Speicher zu gut aussehen laesst. Unter 330 aufgezeichneten Tagen steht das jetzt als Warnung an der Karte.
+
 - **Fluss/Sankey: ein Elternknoten wird nie kleiner als seine Kinder gezeigt** — Geraetemeter kommen asynchron; ein Kind, das gerade hochgefahren ist (ELWA auf 2,8 kW), konnte hoeher als sein Eltern-Meter (Heizung 901 W) lesen und den Elternknoten kleiner als sein eigenes Kind zeichnen. Der Elternknoten wird jetzt auf mindestens die Summe seiner Kinder geklammert; die Netz-Bilanz bleibt korrekt (der Bezug ist eine frisch gemessene Quelle, der Rest klammert bei 0).
 - **Menue neu geordnet und umbenannt** — Reihenfolge jetzt Heute, Vorgaben (frueher „Verhalten"), Verlauf, Status, Analysen, Einrichtung, Dokumentation (frueher „Handbuch"); eigene monochrome Icons fuer Dokumentation und Vorgaben (Klemmbrett statt Blitz).
 - **Dokumentation: Strategien, Prioritaeten und Steuerungsstufen erklaert** — was die einzelnen Strategien tun, wie die Prioritaetenliste Ueberschuss und Abschaltung regelt und wie der Planer je Stufe damit umgeht (Automatisch folgt dem laufend neu gerechneten Plan, Assistiert nur einem bestaetigten, Regelbasiert keinem; Pflichten laufen immer).
