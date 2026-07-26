@@ -2,6 +2,7 @@
 
 ## 0.11.0
 
+- **Der WW-Boost steht jetzt auch im realisierten Ledger** — die Warmwasser-Anhebung (Wärmepumpe läuft früh auf Überschuss) wird je Snapshot als überschuss-gedeckte WP-Leistung aufgezeichnet und als eigene Zeile „Warmwasser-Anhebung" (Preis − Einspeisung) in „SEA-Einsparung aus Entscheidungen" gebucht — symmetrisch zum Prognose-Check. Zählt nur bei aktivem Boost, je Wärmepumpe einmal.
 - **Analyse zeigt kleine Beträge Cent-genau** — Ist-Kosten, Baseline-Kosten und Tarifvergleich runden erst ab 100 EUR auf ganze Euro; darunter (Tages-/Wochenkosten) auf Cent. Ein 0,63-EUR-Tag erschien vorher als '1 EUR' und sah nach einer Diskrepanz zum Dashboard aus.
 - **Aufschiebbare Aktionen mit Sofort-Start direkt im „Plan für heute"** — je verschiebbarer Aktion (Waschmaschine, Trockner …) und je anwesendem Fahrzeug eine Karte mit Button: „jetzt starten" bzw. „sofort laden" (und „Auftrag zurücknehmen" / „Laden beenden"), ohne dafür in die Verhalten-Einstellungen wechseln zu müssen. Nutzt dieselben Backends wie die Vorgaben-Karte.
 - **Der Prognose-Check bewertet jetzt auch den WW-Boost** — die Warmwasser-Anhebung (Wärmepumpe läuft früh auf Überschuss, um Wärme zu speichern) zählt als Zeit-Verschiebung von WP-Strom ins PV-Fenster (Preis − Einspeisung), zusätzlich zu den verschobenen Geräten. Alle Plan-Aktionen werden einheitlich als Verschiebung bewertet (der resistive COP-Fall bleibt der reaktiven ELWA-Senke im Ledger vorbehalten).
