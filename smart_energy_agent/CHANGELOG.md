@@ -2,6 +2,10 @@
 
 ## 0.11.0
 
+- **Analysen greifen auf die festgeschriebenen Tageswerte zurueck** — fehlen fuer einen Tag im Zeitraum die Rohdaten (aufgeraeumt oder spaeter verdichtet), ergaenzen Baselines, Tarifvergleich und Journal ihn aus day_metrics statt ihn stillschweigend wegzulassen. Tage mit Rohdaten werden dabei nie doppelt gezaehlt; die Autarkie wird aus den summierten Energien neu berechnet statt Prozentwerte zu mitteln. Die Energiebilanz nennt, wie viele Tage aus dem Speicher kamen.
+- **Einrichtung: richtiges Symbol** in der Seitenueberschrift (Werkzeug wie im Menue statt Sonne).
+- **Analysen: Energiebilanz steht jetzt oben**, direkt unter der Zeitauswahl; die Zeile „Messpunkte" entfaellt.
+
 - **Naechtlich: Baselines und Tarifmodelle je Tag dauerhaft festschreiben** — diese Karten rechnen die Anlage nach (Batterie-Walk mit Begrenzung an Kapazitaet, Reserve und Wechselrichterleistung) und sind daher aus einer aufgeraeumten oder verdichteten Historie NICHT rekonstruierbar: gemessen an einem echten 6-Tage-Export liegt der Wert 'Ohne Steuerung' bei Stundenaufloesung 31 % und bei Tagesaufloesung 400 % daneben. Der Nachtlauf berechnet sie jetzt je abgeschlossenem Tag bei voller Aufloesung und legt sie in der neuen Tabelle day_metrics ab, die das Aufraeumen ueberlebt. Erster Schreibvorgang gilt (ein spaeterer Lauf ueber geloeschte Rohdaten kann einen guten Wert nicht verschlechtern). Abrufbar ueber /api/day-metrics; vermerkt wird auch, ob die dynamische Zeile aus echten Boersenpreisen stammt.
 
 - **Investition: Hinweis, solange die Hochrechnung auf einer Jahreszeit beruht** — die Spalte „hochgerechnet" rechnet Ersparnis durch Tage mal 365; mit erst wenigen Monaten Aufzeichnung ist das eine Jahreszeit und kein Jahr, was mehr PV und einen groesseren Speicher zu gut aussehen laesst. Unter 330 aufgezeichneten Tagen steht das jetzt als Warnung an der Karte.
