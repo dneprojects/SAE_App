@@ -2,6 +2,8 @@
 
 ## 0.11.0
 
+- **Fahrzeug-Ladestand wird live wieder aktuell angezeigt** — Fahrzeuge liegen in den Einstellungen und nicht in der Komponenten-Konfiguration, deshalb fehlten ihre Entitaeten in der Liste der beobachteten Entitaeten. Ihre Zustandsaenderungen wurden verworfen, und jeder Live-Zugriff fiel auf den HA-Schnappschuss zurueck, der nur beim Verbinden geholt wird. Der Verlauf stimmte deshalb, waehrend Heute (Diagramm und Kachel 'Aktuell') und Vorgaben den Ladestand seit dem App-Start eingefroren zeigten.
+
 - **Analysen greifen auf die festgeschriebenen Tageswerte zurueck** — fehlen fuer einen Tag im Zeitraum die Rohdaten (aufgeraeumt oder spaeter verdichtet), ergaenzen Baselines, Tarifvergleich und Journal ihn aus day_metrics statt ihn stillschweigend wegzulassen. Tage mit Rohdaten werden dabei nie doppelt gezaehlt; die Autarkie wird aus den summierten Energien neu berechnet statt Prozentwerte zu mitteln. Die Energiebilanz nennt, wie viele Tage aus dem Speicher kamen.
 - **Einrichtung: richtiges Symbol** in der Seitenueberschrift (Werkzeug wie im Menue statt Sonne).
 - **Analysen: Energiebilanz steht jetzt oben**, direkt unter der Zeitauswahl; die Zeile „Messpunkte" entfaellt.
