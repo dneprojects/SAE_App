@@ -2,6 +2,8 @@
 
 ## 0.11.0
 
+- **„Heute" zeigt nur noch Meldungen von heute** — Anpassungen und Geraete-Meldungen (z. B. „Durchlauf beendet") wurden nach Anzahl gehalten, nicht nach Alter, und standen deshalb auch am naechsten Morgen noch da. Die Ein-Stunden-Sperre der Automatik sieht weiterhin die vollstaendige Liste, sonst waere eine Umstellung um 23:40 Uhr um 00:10 Uhr wieder freigegeben.
+
 - **Zeitraum-Auswahl in Verlauf und Analysen bedeutet jetzt dasselbe** — Tag/Woche/Monat/Jahr sind auf beiden Seiten datumsgenau, „bis jetzt" rollt den gewaehlten Umfang rueckwaerts bis zum aktuellen Moment. Bisher war es in den Analysen genau umgekehrt, derselbe Knopf lieferte also verschiedene Zeitraeume. Doku angepasst.
 - **Baseline-Erklaerungen ueberarbeitet** — klarer gegliedert, und die Senken-Rechnung war falsch beschrieben: Der Baseline wird der Waermepumpen-Ersatzstrom ABZUEGLICH der Einspeiseverguetung angelastet (Preis/COP − Einspeisung), nicht beides addiert.
 
