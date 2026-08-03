@@ -2,6 +2,8 @@
 
 ## 0.11.0
 
+- **Abends verschwand die PV-Prognose, obwohl sie vorhanden war** — die Pruefung verlangte einen Prognosewert fuer mindestens die HAELFTE der naechsten 16 Stunden. Eine Sonnenprognose fuehrt aber nur die Stunden mit Sonne auf und laesst die Nacht weg; ab dem spaeten Nachmittag besteht der Horizont ueberwiegend aus Nacht, die Bedingung war also nicht mehr erfuellbar. SEA meldete dann 'Es fehlt eine verwertbare PV-Prognose' und forderte zur Einrichtung von etwas auf, das laengst eingerichtet war. Massgeblich ist jetzt, ob die Prognose ueberhaupt in den Horizont hineinreicht; fehlende Nachtstunden gelten als 'keine Sonne' (0 W), wie sie ohnehin schon weiterverarbeitet wurden. Eine veraltete Prognose wird weiterhin abgelehnt.
+
 - **Plan fuer heute: Waschmaschine/Trockner nicht mehr als Tagesbalken** — im Ausblick endete das Programm einer Maschine nur dann, wenn SEA ihre Laufzeit bereits gelernt hatte. Beim ersten Lauf fehlte dieses Ende, das Geraet zog in der Vorausschau bis Mitternacht weiter und wurde entsprechend als durchgehender Balken gezeichnet. Ohne gelerntes Profil gilt jetzt eine angenommene Programmdauer von zwei Stunden.
 
 - **„Heute" zeigt nur noch Meldungen von heute** — Anpassungen und Geraete-Meldungen (z. B. „Durchlauf beendet") wurden nach Anzahl gehalten, nicht nach Alter, und standen deshalb auch am naechsten Morgen noch da. Die Ein-Stunden-Sperre der Automatik sieht weiterhin die vollstaendige Liste, sonst waere eine Umstellung um 23:40 Uhr um 00:10 Uhr wieder freigegeben.
