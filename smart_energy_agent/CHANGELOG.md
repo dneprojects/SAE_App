@@ -2,6 +2,9 @@
 
 ## 0.11.0
 
+- **Plan fuer heute: Geraete erscheinen nur, wenn sie laufen oder eingeplant sind** — eine Maschine, die niemand beladen hat, wurde im simulierten Tag irgendwann eingeschaltet und dadurch als geplanter Lauf gezeichnet. Gezeigt wird jetzt nur, was einen Auftrag hat (Direktstart oder Disposition).
+- **Balken-Beschriftungen laufen nicht mehr ueber den Balken hinaus**; lange Geraetenamen werden gekuerzt, der volle Name steht im Tooltip. Die Batterie-Spur heisst jetzt „Batterieladung" bzw. „Batteriedeckung" statt „laedt"/„deckt".
+
 - **Plan fuer heute: Hinweis unter der Legende entschlackt** — statt eines Absatzes ueber Speicher in grauer Karte steht dort nur noch „Klick auf einen Balken zeigt sein Warum.", als schlichte Zeile. „Block" heisst auch im Verlauf jetzt „Balken".
 
 - **Abends verschwand die PV-Prognose, obwohl sie vorhanden war** — die Pruefung verlangte einen Prognosewert fuer mindestens die HAELFTE der naechsten 16 Stunden. Eine Sonnenprognose fuehrt aber nur die Stunden mit Sonne auf und laesst die Nacht weg; ab dem spaeten Nachmittag besteht der Horizont ueberwiegend aus Nacht, die Bedingung war also nicht mehr erfuellbar. SEA meldete dann 'Es fehlt eine verwertbare PV-Prognose' und forderte zur Einrichtung von etwas auf, das laengst eingerichtet war. Massgeblich ist jetzt, ob die Prognose ueberhaupt in den Horizont hineinreicht; fehlende Nachtstunden gelten als 'keine Sonne' (0 W), wie sie ohnehin schon weiterverarbeitet wurden. Eine veraltete Prognose wird weiterhin abgelehnt.
