@@ -2,6 +2,8 @@
 
 ## 0.11.0
 
+- **Plan fuer heute: Hinweis unter der Legende entschlackt** — statt eines Absatzes ueber Speicher in grauer Karte steht dort nur noch „Klick auf einen Balken zeigt sein Warum.", als schlichte Zeile. „Block" heisst auch im Verlauf jetzt „Balken".
+
 - **Abends verschwand die PV-Prognose, obwohl sie vorhanden war** — die Pruefung verlangte einen Prognosewert fuer mindestens die HAELFTE der naechsten 16 Stunden. Eine Sonnenprognose fuehrt aber nur die Stunden mit Sonne auf und laesst die Nacht weg; ab dem spaeten Nachmittag besteht der Horizont ueberwiegend aus Nacht, die Bedingung war also nicht mehr erfuellbar. SEA meldete dann 'Es fehlt eine verwertbare PV-Prognose' und forderte zur Einrichtung von etwas auf, das laengst eingerichtet war. Massgeblich ist jetzt, ob die Prognose ueberhaupt in den Horizont hineinreicht; fehlende Nachtstunden gelten als 'keine Sonne' (0 W), wie sie ohnehin schon weiterverarbeitet wurden. Eine veraltete Prognose wird weiterhin abgelehnt.
 
 - **Plan fuer heute: Waschmaschine/Trockner nicht mehr als Tagesbalken** — im Ausblick hatte ein Schaltgeraet ueberhaupt nur dann ein Programmende, wenn ein Auftrag mit gelernter Laufzeit vorlag. Eine selbstbeendende Maschine wird von der Steuerung aber nie abgeschaltet (in Wirklichkeit faellt ihre Leistung von allein, im Modell nicht) - sie zog in der Vorausschau bis ueber Mitternacht weiter und wurde als durchgehender Balken gezeichnet, ihre Energie ging in die Prognosezahlen ein. Jedes Geraet hat jetzt ein Programmende: Restzeit des Auftrags, sonst gelerntes Profil, sonst zwei Stunden. Warmwasser bleibt ausgenommen, dort bestimmt das Speichermodell die Laufzeit.
