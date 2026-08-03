@@ -2,6 +2,8 @@
 
 ## 0.11.0
 
+- **Plan fuer heute: Waschmaschine/Trockner nicht mehr als Tagesbalken** — im Ausblick endete das Programm einer Maschine nur dann, wenn SEA ihre Laufzeit bereits gelernt hatte. Beim ersten Lauf fehlte dieses Ende, das Geraet zog in der Vorausschau bis Mitternacht weiter und wurde entsprechend als durchgehender Balken gezeichnet. Ohne gelerntes Profil gilt jetzt eine angenommene Programmdauer von zwei Stunden.
+
 - **„Heute" zeigt nur noch Meldungen von heute** — Anpassungen und Geraete-Meldungen (z. B. „Durchlauf beendet") wurden nach Anzahl gehalten, nicht nach Alter, und standen deshalb auch am naechsten Morgen noch da. Die Ein-Stunden-Sperre der Automatik sieht weiterhin die vollstaendige Liste, sonst waere eine Umstellung um 23:40 Uhr um 00:10 Uhr wieder freigegeben.
 
 - **Zeitraum-Auswahl in Verlauf und Analysen bedeutet jetzt dasselbe** — Tag/Woche/Monat/Jahr sind auf beiden Seiten datumsgenau, „bis jetzt" rollt den gewaehlten Umfang rueckwaerts bis zum aktuellen Moment. Bisher war es in den Analysen genau umgekehrt, derselbe Knopf lieferte also verschiedene Zeitraeume. Doku angepasst.
