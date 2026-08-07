@@ -2,6 +2,8 @@
 
 ## 0.11.0
 
+- **Keine Anlagen-Interna mehr in den Geraetetexten** — auf „Aktuell" stand hinter der Entladung eine Klammer mit Rohwerten („[geregelt (grid=50 own=1039 cap=0)]"). Dort steht jetzt nur noch, welche Regel greift: „Entladung 1070 W, geregelt". Die Rohwerte bleiben erhalten, sie gehen ins Diagnose-Protokoll.
+
 - **Plan-Begruendungen sprechen jetzt ueber die Zukunft** — die Balken im „Plan fuer heute" nutzten die Erklaertexte des Verlaufs und behaupteten damit ueber den kommenden Abend „Die Batterie hat den Netzbezug gedeckt". Ein Plan nennt eine Absicht, die auch scheitern kann: „Die Batterie soll den Netzbezug decken — so weit ihr Ladestand reicht."
 
 - **Plan fuer heute: Geraete erscheinen nur, wenn sie laufen oder eingeplant sind** — eine Maschine, die niemand beladen hat, wurde im simulierten Tag irgendwann eingeschaltet und dadurch als geplanter Lauf gezeichnet. Gezeigt wird jetzt nur, was einen Auftrag hat (Direktstart oder Disposition).
