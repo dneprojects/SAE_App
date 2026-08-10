@@ -2,6 +2,8 @@
 
 ## 0.11.0
 
+- **Verlauf: Strategie-Streifen liegt wieder unter der richtigen Uhrzeit** — der Streifen hatte eine breitere linke Spalte fuer die Namen als das Diagramm darueber und war dadurch gegen dessen Zeitachse verschoben; ein Balken erschien bis zu rund anderthalb Stunden zu spaet (die angezeigte Uhrzeit war korrekt, die Position nicht). Beide nutzen jetzt dieselbe Achse, die Spurnamen stehen ueber ihrer Spur und werden nicht mehr abgeschnitten.
+
 - **Keine Anlagen-Interna mehr in den Geraetetexten** — auf „Aktuell" stand hinter der Entladung eine Klammer mit Rohwerten („[geregelt (grid=50 own=1039 cap=0)]"). Dort steht jetzt nur noch, welche Regel greift: „Entladung 1070 W, geregelt". Die Rohwerte bleiben erhalten, sie gehen ins Diagnose-Protokoll.
 
 - **Plan-Begruendungen sprechen jetzt ueber die Zukunft** — die Balken im „Plan fuer heute" nutzten die Erklaertexte des Verlaufs und behaupteten damit ueber den kommenden Abend „Die Batterie hat den Netzbezug gedeckt". Ein Plan nennt eine Absicht, die auch scheitern kann: „Die Batterie soll den Netzbezug decken — so weit ihr Ladestand reicht."
