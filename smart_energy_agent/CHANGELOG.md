@@ -2,6 +2,8 @@
 
 ## 0.11.0
 
+- **Analysen: ganze Kalendereinheiten heissen jetzt beim Namen** — ein voller Monat steht als „Januar 2026", ein volles Jahr als „2026" statt als Datumsbereich. Rollende Fenster („bis jetzt") bleiben ein Bereich, denn sie ueberschreiten die Grenze bewusst.
+
 - **Analysen: Zeitraum-Angabe nennt nur noch dann zwei Daten, wenn der Zeitraum wirklich ueber die Datumsgrenze geht** — ein einzelner Kalendertag stand als „09.08.2026 – 09.08.2026" da. Jetzt: „heute" fuer den laufenden Tag, sonst das blosse Datum; ein Bereich nur bei mehreren Tagen oder beim rollenden 24-Stunden-Fenster.
 
 - **Verlauf: Strategie-Streifen liegt wieder unter der richtigen Uhrzeit** — der Streifen hatte eine breitere linke Spalte fuer die Namen als das Diagramm darueber und war dadurch gegen dessen Zeitachse verschoben; ein Balken erschien bis zu rund anderthalb Stunden zu spaet (die angezeigte Uhrzeit war korrekt, die Position nicht). Beide nutzen jetzt dieselbe Achse, die Spurnamen stehen ueber ihrer Spur und werden nicht mehr abgeschnitten.
