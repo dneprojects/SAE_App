@@ -2,6 +2,8 @@
 
 ## 0.11.0
 
+- **Dokumentation nachgezogen** — Kapitel „Fehlerbehebung / FAQ" entfaellt (12 Kapitel). Neu beschrieben: Haushaltsgeraete erscheinen im Plan nur, wenn sie laufen oder eingeplant sind, und die Begruendungen dort sind als Absicht formuliert; die naechtlich dauerhaft festgeschriebenen Tagesergebnisse und der Rueckgriff darauf, wenn Rohdaten fehlen.
+
 - **Analysen: ganze Kalendereinheiten heissen jetzt beim Namen** — ein voller Monat steht als „Januar 2026", ein volles Jahr als „2026" statt als Datumsbereich. Rollende Fenster („bis jetzt") bleiben ein Bereich, denn sie ueberschreiten die Grenze bewusst.
 
 - **Analysen: Zeitraum-Angabe nennt nur noch dann zwei Daten, wenn der Zeitraum wirklich ueber die Datumsgrenze geht** — ein einzelner Kalendertag stand als „09.08.2026 – 09.08.2026" da. Jetzt: „heute" fuer den laufenden Tag, sonst das blosse Datum; ein Bereich nur bei mehreren Tagen oder beim rollenden 24-Stunden-Fenster.
